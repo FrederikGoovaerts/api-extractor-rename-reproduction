@@ -1,0 +1,17 @@
+{
+  "name": "api-extractor-global-repro",
+  "version": "1.0.0",
+  "author": "Frederik Goovaerts",
+  "description": "Reproduction project for lookup failure with globals in api-extractor",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "extract": "api-extractor run --local --verbose",
+    "repro": "ts-node ./scripts/repro.ts" 
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.10.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}
